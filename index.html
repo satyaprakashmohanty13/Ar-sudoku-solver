@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AR Sudoku Solver</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #1a202c;}
+        .hero-bg {
+            background: linear-gradient(to bottom, #1e293b 0%, #0f172a 100%);
+        }
+        .main-container {
+            max-width: 1440px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 24px;
+            overflow: hidden;
+        }
+        .try-it-now-btn {
+            background: linear-gradient(to right, #6EE7B7, #3B82F6);
+            box-shadow: 0 10px 20px -5px rgba(110, 231, 183, 0.4);
+            transition: all 0.3s ease;
+        }
+        .try-it-now-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 14px 28px -5px rgba(110, 231, 183, 0.5);
+        }
+        .feature-icon {
+            font-size: 3rem;color: #9ca3af;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 flex items-center justify-center min-h-screen p-4">
+<div class="main-container bg-slate-900 text-white shadow-2xl">
+<header class="absolute top-0 left-0 right-0 z-10 px-8 md:px-16 py-8">
+<nav class="flex justify-between items-center">
+<div class="flex items-center space-x-2">
+<span class="material-icons text-green-400 text-3xl">grid_on</span>
+<span class="text-xl font-bold tracking-wider">AR SUDOKU SOLVER</span>
+</div>
+<div class="hidden md:flex items-center space-x-10 text-lg">
+<a class="hover:text-green-400 transition" href="#">about</a>
+<a class="hover:text-green-400 transition" href="#">contact</a>
+</div>
+<button class="md:hidden">
+<span class="material-icons text-3xl">menu</span>
+</button>
+</nav>
+</header>
+<main>
+<div class="relative hero-bg">
+<div class="absolute inset-0">
+<img alt="A person holding a smartphone showing an AR Sudoku solver app overlaying a physical Sudoku puzzle on a desk with a coffee cup and plant." class="w-full h-full object-cover opacity-30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKAqHMrgNrTGe0l5KJxbiMQkwa3ZrroGMYCOfvHyl6-vHlXyhhIT57zcoxmvlQ4EFliPd46hPYhajioZBhLFea9PD8Z_m7Twn_LPXrZCK2de38xZqPpCRNpYOCgyJrgEMGRVXX3kqqgmW_etZXGkpefnc_ZPAr1bGJ241dPYBk1XzfkkhQel7v5IKtCInEk-VujumA3Jgr7dCB6P4XFERx7Fjcaf-n9nZGZQIGVNT5LBF3qHGZfVxubnpmIifUQub5ZuLSfhwdr-ik"/>
+</div>
+<div class="relative z-10 flex flex-col lg:flex-row items-center justify-center px-8 md:px-16 pt-40 pb-24">
+<div class="lg:w-1/2 text-center lg:text-left mb-12 lg:mb-0">
+<h1 class="text-5xl md:text-7xl font-bold leading-tight mb-4">
+                            AR SUDOKU<br/>SOLVE
+                        </h1>
+<p class="text-xl md:text-2xl text-gray-300 mb-8">
+                            Solve Sudoku Faster with<br/>Augmented Reality
+                        </p>
+<a href="main.html" class="try-it-now-btn text-white font-bold py-4 px-10 rounded-full text-lg block text-center">
+    TRY IT NOW
+</a>
+</div>
+</div>
+</div>
+<div class="bg-slate-800 py-20 px-8 md:px-16">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-16 text-center">
+<div class="flex flex-col items-center">
+<span class="material-icons feature-icon mb-4">center_focus_weak</span>
+<h3 class="text-xl font-semibold mb-2">Real-time Recognition</h3>
+<p class="text-gray-400">No need to take a photo. Just point your camera at the Sudoku puzzle — the solver detects and processes the grid live, even if it's slightly tilted or blurry. It adapts in real-time for a seamless AR experience..</p>
+</div>
+<div class="flex flex-col items-center">
+<span class="material-icons feature-icon mb-4">checklist</span>
+<h3 class="text-xl font-semibold mb-2">Step-by-Step Guidance</h3>
+<p class="text-gray-400">Want to learn how to solve Sudoku instead of just seeing the answer? This mode walks you through each step logically, explaining how each number is placed — ideal for improving your puzzle-solving skills.</p>
+</div>
+<div class="flex flex-col items-center">
+<span class="material-icons feature-icon mb-4">speed</span>
+<h3 class="text-xl font-semibold mb-2">Instant Solutions</h3>
+<p class="text-gray-400">Get the complete solution to any Sudoku puzzle immediately. Just scan the puzzle, and the solver instantly displays the filled grid — no waiting, no delays.
+.</p>
+</div>
+</div>
+<div class="flex justify-center space-x-3 mt-16">
+<div class="w-3 h-3 bg-green-400 rounded-full"></div>
+<div class="w-3 h-3 bg-gray-600 rounded-full"></div>
+<div class="w-3 h-3 bg-gray-600 rounded-full"></div>
+</div>
+</div>
+</main>
+</div>
+
+</body>
+</html>
