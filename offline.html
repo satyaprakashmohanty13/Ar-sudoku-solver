@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Offline — Sudoku AR</title>
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+         margin:0;display:flex;min-height:100vh;align-items:center;justify-content:center;
+         text-align:center;padding:2rem}
+    .card{max-width:560px}
+    button{padding:.75rem 1rem;border:0;border-radius:.75rem;cursor:pointer}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>You're offline</h1>
+    <p>The app couldn’t load fresh data. Try again when you’re back online.</p>
+    <p>Cached pages and assets should still work.</p>
+    <button onclick="location.reload()">Retry</button>
+  </div>
+</body>
+</html>
